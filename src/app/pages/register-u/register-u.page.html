@@ -1,0 +1,48 @@
+<app-header titulo="Registro Usuario"></app-header>
+
+<ion-content class="ion-no-padding">
+
+    <ion-card>
+        <ion-img src="/assets/registerU.png"></ion-img>
+        <ion-card-content></ion-card-content>
+        <div class="ion-padding ion-text-center">Registro de Usuario</div>
+    </ion-card>
+
+
+    <form>
+        <ion-list>
+            <ion-list-header>
+                <div class="ion-text-center">
+
+                </div>
+            </ion-list-header>
+            <ion-item>
+                <ion-label position="floating">Nombre</ion-label>
+                <ion-input type="text" name="nombre" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">Apellido</ion-label>
+                <ion-input type="text" name="apellido" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">Dirección</ion-label>
+                <ion-input type="text" name="direccion" required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="email" name="email" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">Password</ion-label>
+                <ion-input type="password" name="password" required></ion-input>
+            </ion-item>
+        </ion-list>
+
+        <ion-button expand="full" type="submit" routerLink="/register-e">Enviar</ion-button>
+
+    </form>
+
+</ion-content>

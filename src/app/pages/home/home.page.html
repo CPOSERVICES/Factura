@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>CPO BUSINESS</ion-title>
+        <ion-buttons slot="end">
+            <ion-menu-button color="primary" menu="primerMenu"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding">
+    <!-- menu de cabecera iconos -->
+    <ion-grid fixed size="5" size-lg="5" size-md="5" size-sm="5" size-xs="5">
+        <ion-row>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="home"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear" routerLink="/facturacion">
+                    <ion-icon slot="icon-only" color="dark" name="paper"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="podium"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="clipboard"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="cart"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <!-- charts par ver los productos mas vendindos -->
+    <ion-card class="welcome-card">
+        <ion-card-header>
+            <ion-card-title></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <div id="highcharts" style="width:100%; height:400px;"></div>
+        </ion-card-content>
+    </ion-card>
+
+    <!-- img de las facturas por vencer -->
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Facturas por Vencer</ion-card-title>
+        </ion-card-header>
+        <ion-img src="/assets/cobrar.PNG"></ion-img>
+        <ion-card-content></ion-card-content>
+    </ion-card>
+
+    <!-- img de las pagos por realizar -->
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Pagos por Realizar</ion-card-title>
+        </ion-card-header>
+        <ion-img src="/assets/cobrar.PNG"></ion-img>
+        <ion-card-content></ion-card-content>
+    </ion-card>
+
+</ion-content>

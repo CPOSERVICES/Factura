@@ -1,0 +1,13 @@
+[{
+    "icon": "american-football",
+    "name": "Login",
+    "redirectTo": "/login"
+}, {
+    "icon": "appstore",
+    "name": "Registro Usuario",
+    "redirectTo": "/register-u"
+}, {
+    "icon": "contact",
+    "name": "Registro Empresa",
+    "redirectTo": "/register-e"
+}]

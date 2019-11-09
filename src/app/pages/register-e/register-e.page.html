@@ -1,0 +1,47 @@
+<app-header titulo="Registro Empresa"></app-header>
+
+<ion-content class="ion-no-padding">
+
+    <ion-card>
+        <ion-img src="/assets/empresa.jpg"></ion-img>
+        <ion-card-content></ion-card-content>
+        <div class="ion-padding ion-text-center">Registro de Empresa</div>
+    </ion-card>
+
+    <form>
+        <ion-list>
+            <ion-item>
+                <ion-label position="floating">Razón Social</ion-label>
+                <ion-icon name=""></ion-icon>
+                <ion-input type="text" name="nombre" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">RUC</ion-label>
+                <ion-input type="number" name="apellido" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">Dirección</ion-label>
+                <ion-input type="text" name="direccion" required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input type="email" name="email" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="floating">Teléfono</ion-label>
+                <ion-input type="number" name="password" required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Celular</ion-label>
+                <ion-input type="number" name="password" required></ion-input>
+            </ion-item>
+        </ion-list>
+
+        <ion-button expand="block" type="submit" routerLink="/home">Enviar</ion-button>
+
+    </form>
+
+</ion-content>

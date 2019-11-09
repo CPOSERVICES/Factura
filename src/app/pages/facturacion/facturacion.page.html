@@ -1,0 +1,60 @@
+<app-header titulo="Facturación">
+    <ion-toolbar>
+
+        <ion-buttons slot="start">
+
+            <!-- <ion-button (click)="toggleMenu()">
+                    <ion-icon slot="icon-only" name="menu"></ion-icon>
+                  </ion-button> -->
+
+            <ion-menu-button color="primary" menu="primerMenu">
+            </ion-menu-button>
+
+        </ion-buttons>
+
+
+        <ion-title color="primary">Componentes</ion-title>
+    </ion-toolbar>
+</app-header>
+
+
+<ion-content>
+    <div class="container">
+        <ion-card class="top-20">
+            <ion-img src="/assets/factura.png"></ion-img>
+            <ion-card-content></ion-card-content>
+        </ion-card>
+
+        <!--<ion-row class="ion-padding">
+         <ion-col>
+            <ion-button expand="block" fill="clear" class="boton_personalizado">
+                <ion-label>Facturas</ion-label>
+            </ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button expand="full" fill="clear" class="boton_personalizado">
+                <ion-label>Notas C</ion-label>
+            </ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button expand="full" fill="clear" class="boton_personalizado">
+                <ion-label>Notas D</ion-label>
+            </ion-button>
+        </ion-col>
+        <ion-col>
+            <ion-button expand="full" fill="clear" class="boton_personalizado">
+                Retenciones
+            </ion-button>
+        </ion-col>
+    </ion-row> -->
+
+        <ion-button fill="outline" color="tertiary" expand="block" routerLink="/facturas">Facturación</ion-button>
+        <ion-button fill="outline" color="tertiary" expand="block">Notas de Crédito</ion-button>
+        <ion-button fill="outline" color="tertiary" expand="block">Notas de Débito</ion-button>
+        <ion-button fill="outline" color="tertiary" expand="block">Retenciones</ion-button>
+        <ion-button fill="outline" color="tertiary" expand="block">Guías de Remisión</ion-button>
+
+    </div>
+
+
+</ion-content>
