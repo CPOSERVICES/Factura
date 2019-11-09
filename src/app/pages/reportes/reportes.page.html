@@ -7,14 +7,12 @@
     </ion-toolbar>
 </ion-header>
 
-
-<ion-content>
-
+<ion-content no-border>
     <!-- menu de cabecera iconos -->
     <ion-grid fixed size="5" size-lg="5" size-md="5" size-sm="5" size-xs="5">
         <ion-row>
             <ion-col>
-                <ion-button routerLink="/home" fill="clear">
+                <ion-button routerLink="/home" fill="clear" routerLink="/home">
                     <ion-icon slot="icon-only" color="dark" name="home"></ion-icon>
                 </ion-button>
             </ion-col>
@@ -40,19 +38,18 @@
             </ion-col>
         </ion-row>
     </ion-grid>
+    <ion-list>
+
+        <div class="ion-text-center">Reportes</div>
+
+    </ion-list>
+
 
     <div class="container">
-        <!-- <ion-card class="top-20">
-            <ion-card-header>
-                <ion-card-title iontext>Facturación</ion-card-title>
-            </ion-card-header>
-            <ion-img src="/assets/factura.png"></ion-img>
-            <ion-card-content></ion-card-content>
-        </ion-card> -->
 
         <ion-row class="ion-padding">
             <ion-col>
-                <ion-card routerLink="/facturas">
+                <ion-card routerLink="/reporte-f">
 
                     <ion-img src="/assets/add5.png"></ion-img>
 
@@ -100,57 +97,15 @@
                 </ion-card>
 
             </ion-col>
-            <ion-col>
+            <!-- <ion-col>
                 <ion-card routerLink="/reportes">
                     <ion-img src="/assets/add5.png"></ion-img>
                     <ion-card-content>
-                        <div class="ion-text-center">Reportes</div>
+                        Reportes
                     </ion-card-content>
                 </ion-card>
-            </ion-col>
+            </ion-col> -->
         </ion-row>
-
-        <!-- <ion-button fill="solid" color="dark" expand="block" routerLink="/facturas">Facturación</ion-button>
-        <ion-button fill="solid" color="dark" expand="block">Notas de Crédito</ion-button>
-        <ion-button fill="solid" color="dark" expand="block">Notas de Débito</ion-button>
-        <ion-button fill="solid" color="dark" expand="block">Retenciones</ion-button>
-        <ion-button fill="solid" color="dark" expand="block">Guías de Remisión</ion-button>
-        <ion-button fill="solid" color="dark" expand="block">Reportes</ion-button> -->
-
     </div>
-
-    <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="dark">
-        <ion-fab-button>
-            <ion-icon name="add"></ion-icon>
-        </ion-fab-button>
-
-        <ion-fab-list side="top">
-            <ion-fab-button color="">
-                <ion-icon name="home"></ion-icon>
-            </ion-fab-button>
-            <ion-fab-button color="">
-                <ion-icon name="paper"></ion-icon>
-            </ion-fab-button>
-            <ion-fab-button color>
-                <ion-icon name="podium"></ion-icon>
-            </ion-fab-button>
-        </ion-fab-list>
-
-        <ion-fab-list side="start">
-            <ion-fab-button color="">
-                <ion-icon name="clipboard"></ion-icon>
-            </ion-fab-button>
-            <ion-fab-button color="">
-                <ion-icon name="cart"></ion-icon>
-            </ion-fab-button>
-            <ion-fab-button color="">
-                <ion-icon name="logo-bitcoin"></ion-icon>
-            </ion-fab-button>
-        </ion-fab-list>
-
-
-
-    </ion-fab>
-
 
 </ion-content>

@@ -1,0 +1,57 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>CPO BUSINESS</ion-title>
+        <ion-buttons slot="end">
+            <ion-menu-button color="dark" menu="primerMenu"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content no-border>
+    <!-- menu de cabecera iconos -->
+    <ion-grid fixed size="5" size-lg="5" size-md="5" size-sm="5" size-xs="5">
+        <ion-row>
+            <ion-col>
+                <ion-button routerLink="/home" fill="clear" routerLink="/home">
+                    <ion-icon slot="icon-only" color="dark" name="home"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear" routerLink="/facturacion">
+                    <ion-icon slot="icon-only" color="dark" name="paper"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="podium"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="clipboard"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="cart"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+
+    <div class="ion-text-center">Reporte Facturación</div>
+
+
+
+    <ion-card>
+
+        <ion-img src="/assets/reporte.png"></ion-img>
+
+        <ion-card-content>
+
+        </ion-card-content>
+
+    </ion-card>
+
+</ion-content>

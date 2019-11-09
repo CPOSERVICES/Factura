@@ -11,6 +11,8 @@ const routes: Routes = [
   { path: 'inicio', loadChildren: './pages/inicio/inicio.module#InicioPageModule' },
   { path: 'facturacion', loadChildren: './pages/facturacion/facturacion.module#FacturacionPageModule' },
   { path: 'facturas', loadChildren: './pages/facturas/facturas.module#FacturasPageModule' },
+  { path: 'reportes', loadChildren: './pages/reportes/reportes.module#ReportesPageModule' },
+  { path: 'reporte-f', loadChildren: './pages/reporte-f/reporte-f.module#ReporteFPageModule' },
 ];
 
 @NgModule({
