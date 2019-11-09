@@ -2,7 +2,7 @@
 
     {
         "icon": "home",
-        "name": "Home",
+        "name": "Inicio",
         "redirectTo": "/home"
     }, {
         "icon": "paper",
@@ -35,7 +35,7 @@
     },
     {
         "icon": "people",
-        "name": "Adminitrador",
+        "name": "Administrador",
         "redirectTo": ""
     },
     {
