@@ -25,24 +25,24 @@ export class HomePage implements OnInit {
         type: 'bar'
       },
       title: {
-        text: 'Productos más vendidos'
+        text: 'Productos más vendidos por mes'
       },
       xAxis: {
-        categories: ['Apples', 'Bananas', 'Oranges']
+        categories: ['Camisa en Índigo T-40', 'Pantalón en Índigo T-40', 'Zapato Bata T-40']
       },
       yAxis: {
         title: {
-          text: 'Fruit eaten'
+          text: 'Productos de Línea'
         }
       },
       series: [
         {
-          name: 'Jane',
+          name: 'Junio',
           type: undefined,
           data: [1, 0, 4]
         },
         {
-          name: 'John',
+          name: 'Julio',
           type: undefined,
           data: [5, 7, 3]
         }]
