@@ -1,13 +1,47 @@
-[{
-    "icon": "american-football",
-    "name": "Login",
-    "redirectTo": "/login"
-}, {
-    "icon": "appstore",
-    "name": "Registro Usuario",
-    "redirectTo": "/register-u"
-}, {
-    "icon": "contact",
-    "name": "Registro Empresa",
-    "redirectTo": "/register-e"
-}]
+[
+
+    {
+        "icon": "home",
+        "name": "Home",
+        "redirectTo": "/home"
+    }, {
+        "icon": "paper",
+        "name": "Facturación",
+        "redirectTo": "/facturacion"
+    }, {
+        "icon": "podium",
+        "name": "Ventas",
+        "redirectTo": ""
+    },
+    {
+        "icon": "clipboard",
+        "name": "Inventarios",
+        "redirectTo": ""
+    },
+    {
+        "icon": "cart",
+        "name": "Compras",
+        "redirectTo": ""
+    },
+    {
+        "icon": "logo-bitcoin",
+        "name": "SRI",
+        "redirectTo": ""
+    },
+    {
+        "icon": "calendar",
+        "name": "Mi Agenda",
+        "redirectTo": "/register-e"
+    },
+    {
+        "icon": "people",
+        "name": "Adminitrador",
+        "redirectTo": ""
+    },
+    {
+        "icon": "exit",
+        "name": "Cerrar Sessión",
+        "redirectTo": "/login"
+    }
+
+]

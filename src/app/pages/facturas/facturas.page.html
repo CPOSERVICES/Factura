@@ -1,15 +1,44 @@
 <ion-header>
-
     <ion-toolbar>
+        <ion-title>CPO BUSINESS</ion-title>
         <ion-buttons slot="end">
-            <ion-menu-button color="primary" menu="primerMenu"></ion-menu-button>
+            <ion-menu-button color="dark" menu="primerMenu"></ion-menu-button>
         </ion-buttons>
-        <ion-title>Facturas</ion-title>
     </ion-toolbar>
-
 </ion-header>
 
 <ion-content>
+
+    <!-- menu de cabecera iconos -->
+    <ion-grid fixed size="5" size-lg="5" size-md="5" size-sm="5" size-xs="5">
+        <ion-row>
+            <ion-col>
+                <ion-button routerLink="/home" fill="clear" routerLink="/home">
+                    <ion-icon slot="icon-only" color="dark" name="home"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear" routerLink="/facturacion">
+                    <ion-icon slot="icon-only" color="dark" name="paper"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="podium"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="clipboard"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="cart"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 
     <form>
 
@@ -85,9 +114,43 @@
                 </ion-col>
             </ion-row>
 
-            <ion-button size="small">
+            <ion-button size="small" color="dark">
                 <ion-icon slot="icon-only" name="add"></ion-icon>
             </ion-button>
+            <ion-row>
+                <ion-col>
+                    <ion-label>Subtotal</ion-label>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-input type="number"></ion-input>
+                    </ion-item>
+                </ion-col>
+
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-label>Iva%</ion-label>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-input type="number"></ion-input>
+                    </ion-item>
+                </ion-col>
+
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-label>Total</ion-label>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-input type="number"></ion-input>
+                    </ion-item>
+                </ion-col>
+
+            </ion-row>
+
 
 
         </ion-grid>
@@ -101,21 +164,41 @@
 
             </ion-item>
         </ion-list> -->
-        <ion-list radio-group (ionSelect)="radioCambio( $event )">
+        <!--  <ion-list radio-group>
             <ion-header>Forma Pago</ion-header>
-            <ion-item>
-                <ion-label>Efectivo</ion-label>
-                <ion-radio value="efectivo"></ion-radio>
+            <ion-item *ngFor="let check of formaP1" (ionChange)="radioCambio( $event )">
+                <ion-label>{{check.name}}</ion-label>
+                <ion-radio value="check.value"></ion-radio>
             </ion-item>
             <ion-item>
                 <ion-label>Otros</ion-label>
-                <ion-radio value="otros"></ion-radio>
+                <ion-radio [value]="otros"></ion-radio>
+            </ion-item> 
+        </ion-list>-->
+
+        <ion-list>
+            <ion-list-header>Forma de Pago</ion-list-header>
+
+            <ion-item>
+                <ion-label>Efectivo</ion-label>
+                <ion-select placeholder="Seleccione">
+                    <ion-select-option value="efectivo">Efectivo</ion-select-option>
+                </ion-select>
             </ion-item>
+
+            <ion-item>
+                <ion-label>Otros</ion-label>
+                <ion-select value="OK" okText="OK" cancelText="Cancelar">
+                    <ion-select-option value="cheque">Cheque</ion-select-option>
+                    <ion-select-option value="transf">Transferencia</ion-select-option>
+                </ion-select>
+            </ion-item>
+
         </ion-list>
 
 
     </form>
 
-    <ion-button expand="block" type="submit" routerLink="/facturacion">Enviar</ion-button>
+    <ion-button color="dark" expand="block" type="submit" routerLink="/facturacion">Enviar</ion-button>
 
 </ion-content>

@@ -9,6 +9,17 @@ export class FacturasPage implements OnInit {
 
   formaP :string=""
 
+  formaP1 = [
+    {
+      name: 'Efectivo',
+      value: 'efectivo'
+    },
+    {
+      name: 'Otros',
+      value: 'otros'
+    }
+  ];
+
   fecha: Date = new Date();
   customPickerOptions;
   customDate;
@@ -45,8 +56,8 @@ export class FacturasPage implements OnInit {
   // }
 
   radioCambio( event ){
-this.formaP = event.detail.value
-console.log('asd',this.formaP);
+this.formaP1 = event.detail.value
+console.log('asd',this.formaP1);
   }
 
 

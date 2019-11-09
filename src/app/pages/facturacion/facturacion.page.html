@@ -1,26 +1,51 @@
-<app-header titulo="Facturación">
+<ion-header>
     <ion-toolbar>
-
-        <ion-buttons slot="start">
-
-            <!-- <ion-button (click)="toggleMenu()">
-                    <ion-icon slot="icon-only" name="menu"></ion-icon>
-                  </ion-button> -->
-
-            <ion-menu-button color="primary" menu="primerMenu">
-            </ion-menu-button>
-
+        <ion-title>CPO BUSINESS</ion-title>
+        <ion-buttons slot="end">
+            <ion-menu-button color="dark" menu="primerMenu"></ion-menu-button>
         </ion-buttons>
-
-
-        <ion-title color="primary">Componentes</ion-title>
     </ion-toolbar>
-</app-header>
+</ion-header>
 
 
 <ion-content>
+
+    <!-- menu de cabecera iconos -->
+    <ion-grid fixed size="5" size-lg="5" size-md="5" size-sm="5" size-xs="5">
+        <ion-row>
+            <ion-col>
+                <ion-button routerLink="/home" fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="home"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear" routerLink="/facturacion">
+                    <ion-icon slot="icon-only" color="dark" name="paper"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="podium"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="clipboard"></ion-icon>
+                </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button fill="clear">
+                    <ion-icon slot="icon-only" color="dark" name="cart"></ion-icon>
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
     <div class="container">
         <ion-card class="top-20">
+            <ion-card-header>
+                <ion-card-title iontext>Facturación</ion-card-title>
+            </ion-card-header>
             <ion-img src="/assets/factura.png"></ion-img>
             <ion-card-content></ion-card-content>
         </ion-card>
@@ -48,11 +73,12 @@
         </ion-col>
     </ion-row> -->
 
-        <ion-button fill="outline" color="tertiary" expand="block" routerLink="/facturas">Facturación</ion-button>
-        <ion-button fill="outline" color="tertiary" expand="block">Notas de Crédito</ion-button>
-        <ion-button fill="outline" color="tertiary" expand="block">Notas de Débito</ion-button>
-        <ion-button fill="outline" color="tertiary" expand="block">Retenciones</ion-button>
-        <ion-button fill="outline" color="tertiary" expand="block">Guías de Remisión</ion-button>
+        <ion-button fill="solid" color="dark" expand="block" routerLink="/facturas">Facturación</ion-button>
+        <ion-button fill="solid" color="dark" expand="block">Notas de Crédito</ion-button>
+        <ion-button fill="solid" color="dark" expand="block">Notas de Débito</ion-button>
+        <ion-button fill="solid" color="dark" expand="block">Retenciones</ion-button>
+        <ion-button fill="solid" color="dark" expand="block">Guías de Remisión</ion-button>
+        <ion-button fill="solid" color="dark" expand="block">Reportes</ion-button>
 
     </div>
 
